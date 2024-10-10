@@ -6,8 +6,12 @@ import java.util.Scanner;
 
 // Testing class to test efficiency of model
 public class Hangman{
-    public static void main(String[] args) {
-        String filename = "sample_1000.txt"; 
+
+
+
+    // Test accuracy on the sample.txt
+    public static void testGame() {
+        String filename = "sample.txt"; 
         double mistakes = 0;
         Solver solve = new Solver("bigmaps.ser");
         Evidence evidence;
@@ -37,7 +41,15 @@ public class Hangman{
         System.out.println(mistakes/lines + " Average Mistakes");
         System.out.println(length/lines + " Average word Length");
 
+
+
     }
+
+    public static void main(String[] args) {
+        testGame();
+    }
+
+
 
 
 
